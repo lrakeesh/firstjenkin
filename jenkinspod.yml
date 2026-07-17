@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jenkins-pod
+  labels:
+    youtube: lwm
+spec:
+  containers:
+  - name: cont1
+    image: jenkins/jenkins
+    ports:
+    - containerPort: 8080
